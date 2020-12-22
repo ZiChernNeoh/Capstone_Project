@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5E9"
+    tools:context=".data.student_login">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/s_loginemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/studentwelcome" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="145dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/medium"
+        android:text="Welcome Back"
+        android:textAlignment="textStart"
+        android:textColor="#343330"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/regular"
+        android:text="We could hear your stomach from here ;D"
+        android:textAlignment="textStart"
+        android:textColor="#343330"
+        app:layout_constraintBottom_toTopOf="@+id/s_loginemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/s_loginpassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mail" />
+
+    <EditText
+        android:id="@+id/s_loginemail"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textColor="#343330"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/s_loginpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/forgotpassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lock" />
+
+    <EditText
+        android:id="@+id/s_loginpassword"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="#343330"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/forgotpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/forgotpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/showpassword" />
+
+    <Switch
+        android:id="@+id/rememberme1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/regular"
+        android:layoutDirection="rtl"
+        android:text="Remember me"
+        android:textColor="#343330"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/s_loginbutton"
+        app:layout_constraintEnd_toStartOf="@+id/forgotpassword"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="55dp"
+        android:fontFamily="@font/regular"
+        android:text="Forgot Password?"
+        android:textColor="#D9381E"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/s_loginbutton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/s_loginbutton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bluebutton"
+        android:fontFamily="@font/regular"
+        android:text="Login"
+        android:textColor="#FFF8F0"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/alreadyhaveaccount2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/alreadyhaveaccount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/regular"
+        android:text="Don't have an account?"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/signuphere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/regular"
+        android:text="Sign up here"
+        android:textColor="#D9381E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/alreadyhaveaccount2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

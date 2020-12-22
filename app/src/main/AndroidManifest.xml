@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.capstone.group2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".Service.ListenOrder"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".vendor_orderStatus" />
+        <activity android:name=".vendor_menu" />
+        <activity android:name=".OrderStatus" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Cart" />
+        <activity android:name=".Menu_List" />
+        <activity android:name=".FoodDetail" />
+        <activity android:name=".vendor_home" />
+        <activity
+            android:name=".term_of_service"
+            android:parentActivityName=".term_of_service" />
+        <activity
+            android:name=".user_home"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".activity_signup"
+            android:parentActivityName=".loginsignup_selection" />
+        <activity
+            android:name=".vendor_login"
+            android:parentActivityName=".loginsignup_selection" />
+        <activity
+            android:name=".user_login"
+            android:parentActivityName=".loginsignup_selection" />
+        <activity android:name=".loginsignup_selection" />
+        <activity android:name=".launch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
