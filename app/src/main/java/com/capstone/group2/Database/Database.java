@@ -14,7 +14,7 @@ import java.util.List;
 public class Database extends SQLiteAssetHelper {
 
     private static final String DB_NAME="INTIBitesDB.db";
-    private static final int DB_VER=0;
+    private static final int DB_VER=1;
 
     public Database(Context context){
         super(context, DB_NAME, null, DB_VER);
