@@ -2,7 +2,7 @@
 An food ordering application for a college canteen.
 
 Create a new user account
-Username: j19029566@student.newinti.edu.my
+Username: j18029566@student.newinti.edu.my
 Password: test123
 
 Vendor account
